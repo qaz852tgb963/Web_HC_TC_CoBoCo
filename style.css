@@ -11,6 +11,15 @@
   background-image: url(./img/banner.png);
   width: 1920px;
   height: 1280px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner img {
+  margin: 0 auto;
 }
 
 nav {
@@ -33,15 +42,26 @@ nav #box {
 }
 
 nav #box #TopLink {
-  font-size: 18px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #box #TopLink a {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+nav #box #TopLink a:nth-child(2) {
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+nav #box #TopLink a:nth-child(3) {
+  text-align: right;
 }
 
 nav #box #OtherLink {
@@ -49,9 +69,26 @@ nav #box #OtherLink {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #box #OtherLink a:nth-child(2) {
+  text-align: right;
+}
+
+#contant {
+  background-image: url(./img/paper.png);
+  width: 1920px;
+  height: 500px;
+}
+
+#contant h1 {
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 9.6px;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
