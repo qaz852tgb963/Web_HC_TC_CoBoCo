@@ -12,4 +12,46 @@
   width: 1920px;
   height: 1280px;
 }
+
+nav {
+  position: fixed;
+  width: 1920px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav #box {
+  margin: 60px auto 0;
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 205px 350px 510px 180px 180px;
+      grid-template-columns: 205px 350px 510px 180px 180px;
+}
+
+nav #box #TopLink {
+  font-size: 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #box #OtherLink {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */

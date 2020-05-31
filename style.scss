@@ -10,3 +10,36 @@
     width: 1920px;
     height: 1280px;
 }
+
+nav {
+    position: fixed;
+    width: 1920px;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #box{
+        margin: 60px auto 0;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 205px 350px 510px 180px 180px;
+
+        #TopLink{
+            font-size: 18px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            align-items: center;
+        }
+
+        #OtherLink{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            align-items: center;
+
+        }
+    }
+}
